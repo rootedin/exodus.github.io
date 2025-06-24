@@ -1,10 +1,8 @@
 <template>
   <v-footer app height="40">
-    <v-chip color="error" variant="tonal" class="ms-4">
-      <template v-slot:prepend>
-        <v-icon>mdi-close-circle</v-icon>
-      </template>
-       실패 횟수: {{ store.getIncorrectCount }}
+    <v-chip color="grey-darken-4" class="ms-1">
+      <v-icon icon="mdi-close-circle" start></v-icon>
+      {{ store.getIncorrectCount }}
     </v-chip>
 
     <v-dialog v-model="dialog" max-width="400">
