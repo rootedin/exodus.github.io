@@ -17,7 +17,7 @@
               variant="elevated"
               size="large"
             >
-              {{ showStatus ? '현황판 닫기' : '퀴즈 현황판 보기' }}
+              {{ showStatus ? '현황판 닫기' : '현황판 보기' }}
             </v-btn>
           </v-card-actions>
         </v-card>
