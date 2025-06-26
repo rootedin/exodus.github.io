@@ -12,10 +12,17 @@ declare module 'vue' {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     Quiz: typeof import('./components/Quiz.vue')['default']
     Quiz1: typeof import('./components/Quiz1.vue')['default']
+    Quiz10: typeof import('./components/Quiz10.vue')['default']
     Quiz2: typeof import('./components/Quiz2.vue')['default']
+    Quiz3: typeof import('./components/Quiz3.vue')['default']
+    Quiz4: typeof import('./components/Quiz4.vue')['default']
+    Quiz5: typeof import('./components/Quiz5.vue')['default']
+    Quiz6: typeof import('./components/Quiz6.vue')['default']
+    Quiz7: typeof import('./components/Quiz7.vue')['default']
+    Quiz8: typeof import('./components/Quiz8.vue')['default']
+    Quiz9: typeof import('./components/Quiz9.vue')['default']
     QuizStatus: typeof import('./components/QuizStatus.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Setup: typeof import('./components/Setup.vue')['default']
   }
 }

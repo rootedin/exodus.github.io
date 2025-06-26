@@ -6,6 +6,7 @@ export const useAppStore = defineStore("app", {
     isAdmin: JSON.parse(sessionStorage.getItem("isAdmin") || 'false') as boolean,
     incorrectCount: Number(localStorage.getItem("incorrectCount") || 0),
     solvedQuizzes: JSON.parse(localStorage.getItem("solvedQuizzes") || '[]') as { id: string, solvedAt: string }[],
+    hintOpenedQuizIds: JSON.parse(localStorage.getItem("hintOpenedQuizIds") || '[]') as string[],
   }),
   actions: {
     setAdmin(value: boolean) {
@@ -22,11 +23,19 @@ export const useAppStore = defineStore("app", {
         localStorage.setItem("solvedQuizzes", JSON.stringify(this.solvedQuizzes));
       }
     },
+    openHint(quizId: string) {
+      if (!this.hintOpenedQuizIds.includes(quizId)) {
+        this.hintOpenedQuizIds.push(quizId);
+        localStorage.setItem("hintOpenedQuizIds", JSON.stringify(this.hintOpenedQuizIds));
+      }
+    },
     resetState() {
       this.incorrectCount = 0;
       this.solvedQuizzes = [];
+      this.hintOpenedQuizIds = [];
       localStorage.removeItem("incorrectCount");
       localStorage.removeItem("solvedQuizzes");
+      localStorage.removeItem("hintOpenedQuizIds");
     },
   },
   getters: {
@@ -37,5 +46,6 @@ export const useAppStore = defineStore("app", {
       const found = state.solvedQuizzes.find(q => q.id === quizId);
       return found ? found.solvedAt : null;
     },
+    getHintOpenedCount: (state) => state.hintOpenedQuizIds.length,
   },
 });

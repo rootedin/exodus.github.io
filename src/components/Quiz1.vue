@@ -1,92 +1,30 @@
 <template>
-  <Quiz correct-answer="30" quiz-id="1">
-    <v-card-title>
-      "초록불이 왜 안 켜져요?"…도로 주행 연습 중 색약 수험생의 항의
-      소동</v-card-title
-    >
-
+  <Quiz correct-answer="37818" quiz-id="1" hint="혹시 영어가 아니라 그냥 숫자를 적은거 아닐까??">
+    <v-card-title class="mobile-title">드로로의 넘버패드</v-card-title>
     <v-card-text>
-      【경기=새우물뉴스】
-      <br />
-      6월 30일 오전, 경기도 오산시 한 교차로 인근에서 도로 주행 연습 중이던
-      운전면허 수험생 A씨(20대)가 "초록불이 들어오지 않는다"며 경찰에게
-      항의하는 일이 벌어졌다.
-      <br />
-      현장에 함께 있던 운전 학원 강사에 따르면, A씨는 반복적으로 정지 상태를
-      유지하며 "신호가 바뀌지 않는다"고 주장했고, 뒤따르던 차량들의 경적
-      소리에 당황한 나머지 차량을 긴급 정차시켰다.
-      <br />
-      이에 경찰이 현장을 확인했으나 신호등은 정상 작동 중이었던 것으로
-      파악됐다.
-    </v-card-text>
-
-    <v-row dense>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="red-accent-3">
-          1
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="orange-accent-3">
-          2
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="green-accent-3">
-          3
-        </v-sheet>
-      </v-col>
-    </v-row>
-
-    <v-row dense>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="green-accent-3">
-          4
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="red-accent-3">
-          5
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="orange-accent-3">
-          6
-        </v-sheet>
-      </v-col>
-    </v-row>
-
-    <v-row dense>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="orange-accent-3">
-          7
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="green-accent-3">
-          8
-        </v-sheet>
-      </v-col>
-      <v-col cols="4">
-        <v-sheet class="ma-2 pa-2 text-center" color="red-accent-3">
-          9
-        </v-sheet>
-      </v-col>
-    </v-row>
-
-    <v-card-text>
-      경찰은 A씨에게 인지 능력을 테스트하기위해 이것을 보여주고 아래와 같이
-      문제를 내었다고 합니다.
-      <br />
-      A씨가 말했을 정답을 입력하세요.
-      <br />
-      <br />
-      Q. 아래 조건에 맞는 숫자를 선택하여 전부 더한 값을 알려주세요.
-      <br />
-      <br />
-      - 첫번째 줄 : 빨간색 숫자를 제외한다 <br />
-      - 두번째 줄 : 빨간색 숫자만 사용한다 <br />
-      - 세번째 줄 : 주황색 숫자보다 큰 빨간색 숫자만 사용한다
+    갑자기 누가 뒤에서 머리를 때려 정신을 잃었다.
+    <br />
+    으음... 여긴 어디지..? 아! 맞다. 갑자기 누가 뒤에서 머리를 때려 정신을 잃었었구나..
+    <br />
+    내 핸드폰.. 어디있지..? 주위를 살펴보니 뭔가 익숙해보이는 곳이다. 바로 드로로의 집이었다.
+    <br />
+    집안 곳곳을 둘러봐도 핸드폰은 보이지 않았다. 그래서 집 밖을 나가려는 순간..
+    <br />
+    현관문은 고장나 있었고 어떤 이상한 자물쇠와 쇠사슬로 잠겨있었다.
+    <br />
+    그리고 그 옆에 이상한 메모 하나를 발견했다.
+    <br /><br />
+    "빨리 탈출하지 않으면 주일 예배에 늦을걸..??"
+    <br /><br />
+    순간 당황했지만, 아무튼 얼른 이 곳을 탈출해야한다.
+    <br />
+    방탈출이라니 머리가 새하얘졌다.. 아 그래 심호흡을 해보자! 스읍.. 하.. 스읍.. 하..
+    <br />
+    그제서야 테이블 위에 나무 상자가 눈에 들어왔다.
+    <br />
+    상자에는 다섯 자리 숫자로 되어있는 자물쇠가 걸려있었고, 나무 상자 뚜껑에는 BIBLE 이라고 적혀있었다.
+    
+    <v-img src="/quiz1.png" alt="문제 이미지" class="mx-auto my-auxo" max-width="350"/>
     </v-card-text>
   </Quiz>
 </template>

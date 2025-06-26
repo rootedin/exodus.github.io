@@ -4,6 +4,10 @@
       <v-icon icon="mdi-close-circle" start></v-icon>
       {{ store.getIncorrectCount }}
     </v-chip>
+    <v-chip color="indigo-accent-4" class="ms-1">
+      <v-icon icon="mdi-lightbulb-outline" start></v-icon>
+      {{ store.getHintOpenedCount }}
+    </v-chip>
 
     <v-dialog v-model="dialog" max-width="400">
       <v-card>
@@ -54,7 +58,7 @@ const dialog = ref(false);
 const password = ref("");
 const error = ref(false);
 
-const ADMIN_PASSWORD = "119";
+const ADMIN_PASSWORD = "ROOTED";
 
 function handleAdminClick() {
   if (isAdmin.value) {

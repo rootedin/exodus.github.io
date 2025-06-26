@@ -6,7 +6,7 @@
           <v-list-item
             v-for="quizNumber in totalQuizzes"
             :key="quizNumber"
-            :to="isAdmin && !isSolved(quizNumber) ? `/quiz?id=${quizNumber}` : undefined"
+            :to="isAdmin && !isSolved(quizNumber) ? `/?quizId=${quizNumber}` : undefined"
             :disabled="!isAdmin || isSolved(quizNumber)"
             class="mb-2"
             rounded="lg"
@@ -71,7 +71,7 @@ import { useAppStore } from '@/stores/app';
 import { computed, ref } from 'vue';
 
 const store = useAppStore();
-const totalQuizzes = 10;
+const totalQuizzes = 9;
 
 const isAdmin = computed(() => store.isAdmin);
 const dialog = ref(false);
