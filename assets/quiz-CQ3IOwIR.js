@@ -1,0 +1,1 @@
+import{af as n,ak as o,G as e,an as a,ai as s}from"./index-DqWRH9SG.js";const r={style:{padding:"2rem","text-align":"center"}},p=n({__name:"quiz",setup(l){return(i,t)=>(s(),o("div",r,t[0]||(t[0]=[e("h2",null,"이 페이지는 더 이상 사용되지 않습니다.",-1),e("p",null,[a("퀴즈에 접근하려면 "),e("b",null,"/?quizId=1"),a(" 과 같은 주소를 사용하세요.")],-1)])))}});export{p as default};
