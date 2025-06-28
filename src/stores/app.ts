@@ -8,6 +8,7 @@ export const useAppStore = defineStore("app", {
     solvedQuizzes: JSON.parse(localStorage.getItem("solvedQuizzes") || '[]') as { id: string, solvedAt: string }[],
     hintOpenedQuizIds: JSON.parse(localStorage.getItem("hintOpenedQuizIds") || '[]') as string[],
     showWarning: false,
+    firstVisitTime: localStorage.getItem("firstVisitTime") || null,
   }),
   actions: {
     setAdmin(value: boolean) {
@@ -34,6 +35,8 @@ export const useAppStore = defineStore("app", {
       this.incorrectCount = 0;
       this.solvedQuizzes = [];
       this.hintOpenedQuizIds = [];
+      this.firstVisitTime = new Date().toISOString();
+      localStorage.setItem("firstVisitTime", this.firstVisitTime);
       localStorage.removeItem("incorrectCount");
       localStorage.removeItem("solvedQuizzes");
       localStorage.removeItem("hintOpenedQuizIds");
@@ -68,5 +71,6 @@ export const useAppStore = defineStore("app", {
       }
       return true;
     },
+    getFirstVisitTime: (state) => state.firstVisitTime,
   },
 });

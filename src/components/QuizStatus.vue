@@ -40,7 +40,12 @@
           </v-list-item>
         </v-list>
 
-        <div v-if="isAdmin" class="text-center mt-8">
+        <div class="text-center mt-8">
+          <div v-if="store.getFirstVisitTime" class="mb-4">
+            <v-chip color="grey-darken-4" variant="elevated" size="large">
+              시작 시간: {{ formatSolvedAt(store.getFirstVisitTime) }}
+            </v-chip>
+          </div>
           <v-btn color="error" variant="tonal" @click="dialog = true">
             <v-icon start>mdi-restore</v-icon>
             초기화
