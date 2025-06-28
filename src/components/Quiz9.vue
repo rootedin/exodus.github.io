@@ -1,15 +1,20 @@
 <template>
-  <Quiz correct-answer="10" quiz-id="9" hint="10점 만점에 10점~!!">
-    <v-card-title class="mobile-title">핸드폰 비밀번호</v-card-title>
+  <Quiz correct-answer="돌맹이" quiz-id="9" hint="새우물이라니깐...">
+    <v-card-title class="mobile-title">드디어 탈출</v-card-title>
     <v-card-text>
-      정말 마지막까지 짓궂었다... 자물쇠를 풀고 드디어 드로로의 집에서 나왔다!
-      <br />
-      현관문을 닫으니 내 핸드폰이 문고리에 걸려있었다. 곧바로 전원을 켰는데..
-      <br />
-      어라? 비밀번호가 바뀌었네?? 😠
+      돌맹이.txt 파일을 찾아서 열었다!
       <br /><br />
-      "힌트 : 오늘 방탈출 10점 만점에 몇 점??"
-
+      정답이야...!
+      <br />
+      답을 못 맞추길래 예배 때 졸고만 있는 줄 알았는데...
+      <br />
+      돌밭에 뿌려진 씨는 아니었던건가...
+      <br />
+      맹한 것처럼 보였는데...
+      <br />
+      이렇게 잘 풀다니... 마지막 정답은 새우물이야...
+      <br />
+      다음번엔 좀 더 어렵게 내야겠어 😢
     </v-card-text>
   </Quiz>
 </template>

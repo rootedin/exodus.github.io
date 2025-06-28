@@ -1,11 +1,11 @@
 <template>
-  <Quiz correct-answer="314" quiz-id="3" hint="아까는 출애굽기 2장이었으니 바로 그 다음 장이 아닐까?">
+  <Quiz correct-answer="314" quiz-id="3" hint="아까 성경 구절이 어디었었지? 바로 그 다음 장이 아닐까?">
     <v-card-title class="mobile-title">드로로의 배경 화면</v-card-title>
     <v-card-text>
       노트복을 켜서 비밀번호를 입력하니 로그인이 되었다.
       <br />
       I AM THAT I AM 이 적혀있는 멋진 배경이 보였다.
-      <v-img src="/quiz3.png" alt="문제 이미지" class="my-4" max-width="350"/>
+      <v-img src="/quiz3.png" alt="문제 이미지" class="mx-auto my-auxo" max-width="350"/>
       <br />
       그리고 바탕화면엔 iamthatiam.zip 파일만 존재했다. 이런.. 압축을 해제하려면 비밀번호가 필요하다. 이번엔 친절하게도 힌트를 써놨다.
       <br /><br />

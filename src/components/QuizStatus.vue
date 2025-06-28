@@ -71,7 +71,7 @@ import { useAppStore } from '@/stores/app';
 import { computed, ref } from 'vue';
 
 const store = useAppStore();
-const totalQuizzes = 9;
+const totalQuizzes = 10;
 
 const isAdmin = computed(() => store.isAdmin);
 const dialog = ref(false);
@@ -79,9 +79,11 @@ const dialog = ref(false);
 const isSolved = (quizNumber: number) => {
   return store.isQuizSolved(String(quizNumber));
 };
+
 const getSolvedAt = (quizNumber: number) => {
   return store.getSolvedAt(String(quizNumber));
 };
+
 function formatSolvedAt(iso: string | null) {
   if (!iso) return '';
   const d = new Date(iso);

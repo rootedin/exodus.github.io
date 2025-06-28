@@ -1,5 +1,5 @@
 <template>
-  <Quiz correct-answer="4214" quiz-id="4" hint="9칸으로 나뉜 이유가 있을거야..">
+  <Quiz correct-answer="4214" quiz-id="4" hint="9칸으로 나뉜 이유가 있을거야...">
     <v-card-title class="mobile-title">드로로의 압축 파일</v-card-title>
     <v-card-text>
       압축 파일을 열어 해제하니, 그림 파일이 나왔다.

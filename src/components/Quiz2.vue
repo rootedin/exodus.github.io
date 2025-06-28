@@ -1,5 +1,5 @@
 <template>
-  <Quiz correct-answer="110" quiz-id="2" hint="한 글자마다 형광펜 색을 다르게 쓴 걸 보아하니, 정상은 아니야..">
+  <Quiz correct-answer="110" quiz-id="2" hint="한 글자마다 형광펜 색을 다르게 쓴 걸 보아하니, 일반적인 사람은 아닌 것 같아..">
     <v-card-title class="mobile-title">드로로의 성경책</v-card-title>
     <v-card-text>
       자물쇠가 열렸다! 나무 상자 안에는 새 것 같이 보이는 성경책 한 권이 있다.

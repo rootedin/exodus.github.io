@@ -48,8 +48,8 @@
       <div v-else>
         <v-alert
           type="success"
-          title="정답입니다!"
-          text="다음 문제로 넘어가세요."
+          :title="props.quizId === '10' ? '탈출 성공!' : '정답입니다!'"
+          :text="props.quizId === '10' ? '드로로의 방에서 무사히 탈출했습니다!' : '다음 문제로 넘어가세요.'"
         >
         </v-alert>
       </div>
@@ -82,9 +82,14 @@ function openHint() {
 }
 
 onMounted(() => {
-  if (store.isQuizSolved(props.quizId)) {
+  // 실제로 해결된 문제인지 확인
+  const isActuallySolved = store.isQuizSolved(props.quizId);
+  if (isActuallySolved) {
     submitted.value = true;
     correct.value = true;
+  } else {
+    submitted.value = false;
+    correct.value = false;
   }
 });
 

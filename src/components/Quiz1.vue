@@ -1,5 +1,5 @@
 <template>
-  <Quiz correct-answer="37818" quiz-id="1" hint="혹시 영어가 아니라 그냥 숫자를 적은거 아닐까??">
+  <Quiz correct-answer="37818" quiz-id="1" hint="드로로는 항상 거꾸로했었더라지...">
     <v-card-title class="mobile-title">드로로의 넘버패드</v-card-title>
     <v-card-text>
     갑자기 누가 뒤에서 머리를 때려 정신을 잃었다.
